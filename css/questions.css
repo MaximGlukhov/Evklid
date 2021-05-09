@@ -1,0 +1,216 @@
+/* questions */
+.section-questions {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.section-questions__heading {
+  margin-bottom: 37px;
+}
+
+
+.section-questions__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.section-questions__item {
+  margin-top: -1px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid rgba(202, 202, 202, 1);
+}
+
+
+.section-questions__item:first-child {
+  border-top: 1px solid rgba(202, 202, 202, 1);
+}
+
+
+.section-questions__item:first-child:hover,
+.section-questions__item:first-child:focus,
+.section-questions__item:first-child:active {
+  border-color:rgba(255, 153, 0, 1);
+}
+
+
+.section-questions__item:hover,
+.section-questions__item:focus,
+.section-questions__item:active {
+  border-color:rgba(255, 153, 0, 1);
+}
+
+.section-questions__btn {
+  display: flex !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(51, 51, 51, 1);
+  border: none;
+  background-color: #FFFFFF;
+  transition: color .2s ease;
+}
+
+
+.section__question__btn__title {
+  text-align: left;
+  margin-right: 10px;
+}
+
+
+.section-questions__btn:hover {
+  cursor: pointer;
+  color: rgba(255, 153, 0, 1);
+}
+
+
+.section-questions__btn:focus {
+  cursor: pointer;
+  outline: none;
+  color: rgba(255, 153, 0, 1);
+}
+
+
+.section-questions__btn:active {
+  cursor: pointer;
+  outline: none;
+  color: rgba(51, 51, 51, 1);
+}
+
+
+.section-questions__btn::before,
+.section-questions__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+.ui-accordion-header-icon {
+  display: block;
+  order: 1;
+  min-width: 50px;
+  height: 50px;
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23ECECEC'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+}
+
+
+.section-questions__btn:hover .ui-accordion-header-icon,
+.section-questions__btn:focus .ui-accordion-header-icon,
+.section-questions__btn:active .ui-accordion-header-icon {
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='rgba(210, 210, 210, 1)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+
+}
+
+
+.ui-state-active >.ui-accordion-header-icon {
+  transform: rotate(45deg);
+}
+
+
+
+
+.section-questions__item__desc {
+  max-width: 1003px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgba(51, 51, 51, 1);
+}
+
+
+.section-questions__item__desc_alert{
+  padding-bottom: 60px;
+}
+
+
+.ui-accordion .ui-accordion-header {
+  margin: 0;
+}
+
+
+@media(max-width:1366px) {
+.section-questions {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+
+.section-questions__btn {
+  font-size: 20px;
+}
+
+
+.section-questions__btn {
+  padding: 30px 0;
+}
+
+
+.section__question__btn__title {
+  max-width: 750px;
+}
+}
+
+
+@media(max-width:768px) {
+.section-questions__container {
+  padding-right: 23px;
+}
+
+
+.section-questions__list {
+  margin-right: 27px;
+}
+
+
+.section-questions__btn {
+  padding: 37px 0;
+}
+}
+
+
+@media(max-width:550px) {
+  .section-questions {
+    padding: 0;
+  }
+
+
+  .section-questions__heading {
+    margin-bottom: 15px;
+    line-height: 29px;
+  }
+
+
+  .section-questions__list {
+    margin-right: 0;
+  }
+
+
+  .section-questions__btn {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 51px 0;
+  }
+
+
+  .ui-accordion-header-icon {
+  min-width: 30px;
+  height: 30px;
+}
+}
+
